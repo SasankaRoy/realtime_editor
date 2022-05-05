@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homePage {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  height: 100vh;
+}
+.fromWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+}
+.fromWrapper .logo {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.3;
+}
+.logoName {
+  color: #4aee88;
+  font-weight: 350 !important;
+  text-shadow: 1px 0px 0px #4aee88;
+}
+.lable {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.ints_here {
+  align-items: center;
+  justify-content: center;
+  padding: 2.5px 2.5px;
+  display: flex;
+  flex-direction: column;
+}
+.input_box {
+  width: 450px;
+  max-width: 100%;
+  height: 40px;
+  margin: 6px 0px;
+  padding: 0px 5px;
+  border: none;
+  outline: none;
+  background: #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 470;
+  text-transform: capitalize;
+}
+.btn {
+  /* background-color: #4aee88; */
+  margin: 4px 2px;
+  color: #000;
+  font-size: 1.3rem;
+  padding: 4px 0px;  
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn_1 {
+  position: relative;
+  border-radius: 10px;
+  background-color: #4aee88;
+  box-shadow: 0px 0px 7px 0px #4aed88;
+  width: 95px;
+  max-width: 100%;
+  top: 9px;
+  font-weight: 520 !important;
+  left: 39%;
+}
+.btn_1:hover {
+  filter: brightness(85%);
+}
+.btn_copy:hover {
+  filter: brightness(85%);
+}
+.createInfo {
+  font-weight: 450;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.createNew {
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  padding: 2px 0;
+  transition: 0.3s ease-in-out;
+}
+.createNew:hover {
+  filter: brightness(80%);
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+footer h4 {
+  text-transform: capitalize;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  padding: 2.5px 2.5px;
+}
+footer .name {
+  color: #4aee88;
+  text-shadow: 1px 0px 50px #4aee88 !important;
+  font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* editor page */
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  min-height: 100vh;
+  color: #fff;
+}
+.logo_h2{
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(63, 63, 63);
+  padding-bottom: 6px;
+}
+.conn_h3{
+  margin-top:10px;
+  margin-bottom:12px;
+  font-size: 1.3rem;
+  letter-spacing:.4px;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.leftSide{
+  background-color: #1c1e29;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.sideInner{
+  flex:1;
+}
+.connected_list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.client_div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: normal!important;
+}
+.userName{
+  margin-top:9px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing:.4px;
+}
+.btn_leave{
+  background-color:#4aed88;
+  border-radius: 10px;
+  outline: none;
+  font-weight:  520 !important;
+}
+.btn_leave:hover{
+  filter: brightness(85%);
+}
+.btn_copy{
+  /* background-color:#4aed88; */
+  border-radius: 10px;
+  outline: none;
+  font-weight: 520 !important;
+}
+.editor{
+  position: relative;
+  background-color: #fff;
+  height: 100vh;
+}
+.CodeMirror{
+  position: absolute;
+  height:  100% !important;
+  font-size: 25px;
+  line-height: 1.7;
+  padding-top: 20px;
 }
